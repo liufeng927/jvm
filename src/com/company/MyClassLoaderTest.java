@@ -71,7 +71,7 @@ public class MyClassLoaderTest {
             System.out.println(aClass.getClassLoader());
 
             MyClassLoader classLoader1 = new MyClassLoader("E:/test");
-            Class<?> aClass1 = classLoader1.loadClass("com.company.User");
+            Class<?> aClass1 = classLoader1.loadClass("com.company.User1");
             Object obj1 = aClass1.newInstance();
             Method method1 = aClass1.getDeclaredMethod("sout", null);
             method1.invoke(obj1);
